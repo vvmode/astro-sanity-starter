@@ -1,116 +1,73 @@
-# Astro Netlify Sanity Starter
+# Welcome to your Lovable project
 
-![Astro Netlify Sanity Starter](https://assets.stackbit.com/docs/astro-sanity-starter-thumb.jpg)
+## Project info
 
-[Live Demo](https://astro-sanity-starter-demo.netlify.app/)
+**URL**: https://lovable.dev/projects/b7a72a83-f1f9-4ef4-9c33-ce35df51ac00
 
-Netlify Astro and Sanity minimal starter with [visual editing](https://docs.netlify.com/visual-editor/overview/).
+## How can I edit this code?
 
-| Prerequisites                                                                |
-| :--------------------------------------------------------------------------- |
-| [Node.js](https://nodejs.org/) v20.+                                         |
-| (optional) [nvm](https://github.com/nvm-sh/nvm) for Node version management. |
+There are several ways of editing your application.
 
-## Getting Started
+**Use Lovable**
 
-Create local project from this repo and run:
+Simply visit the [Lovable Project](https://lovable.dev/projects/b7a72a83-f1f9-4ef4-9c33-ce35df51ac00) and start prompting.
 
-```txt
-npm install
-```
+Changes made via Lovable will be committed automatically to this repo.
 
-### Sign Into Sanity
+**Use your preferred IDE**
 
-If you are not already signed into Sanity via the CLI, install the CLI package and then run the login command.
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-```txt
-npm install -g @sanity/cli
-sanity login
-```
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-This will open a browser and walk you through the authentication process.
+Follow these steps:
 
-### Import Content
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-Once authenticated, you'll be able to create a Sanity project and import content.
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-```txt
-npm run create-project
-```
+# Step 3: Install the necessary dependencies.
+npm i
 
-_Note: You may want to sign into Sanity in the browser and rename your project._
-
-Once the project exists and you've set the environment variables, you can import the content.
-
-```txt
-npm run import {projectId}
-```
-
-Replace `{projectId}` with the project ID output from the previous command.
-
-### Store Sanity Values
-
-Sign into Sanity to create an editor token, navigate to the following address (replace the `SANITY_PROJECT_ID` with your project ID) `https://www.sanity.io/manage/personal/project/SANITY_PROJECT_ID/api#tokens`. Then create `.env` file in you repo, copy & paste the following environment variables into the file and set their values.
-
-```txt
-SANITY_PROJECT_ID="..."
-SANITY_DATASET="..."
-SANITY_TOKEN="..."
-```
-
-### Run Sanity Studio
-
-Sanity Studio code exists for this project in the `studio` directory. First, install the dependencies in this directory.
-
-```txt
-cd studio
-npm install
-```
-
-Then create a `.env` file in the `studio` directory with the following environment variables and set their values:
-
-```txt
-SANITY_STUDIO_PROJECT_ID="..."
-SANITY_STUDIO_DATASET="..."
-```
-
-Then run the studio locally.
-
-```txt
-sanity dev
-```
-
-If you want to see the content, you can open your browser and navigate to localhost:3333.
-
-### Start Development Server
-
-Then you can run the Astro.js development server in root directory:
-
-```txt
+# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
-Install Netlify Visual Editor CLI:
+**Edit a file directly in GitHub**
 
-```txt
-npm install -g @stackbit/cli
-```
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-And the Stackbit development server.
+**Use GitHub Codespaces**
 
-```txt
-stackbit dev
-```
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-This outputs your own Netlify Visual Editor URL. Open this, register or sign in, and you will be directed to Netlify Visual Editor for your new project.
+## What technologies are used for this project?
 
-## Next Steps
+This project is built with:
 
-Here are a few suggestions on what to do next if you're new to Netlify Visual Editor:
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-- Learn [how Netlify Visual Editor works](https://docs.netlify.com/visual-editor/concepts/how-visual-editor-works/)
-- Check [Netlify Visual Editor reference documentation](https://visual-editor-reference.netlify.com/)
+## How can I deploy this project?
 
-## Support
+Simply open [Lovable](https://lovable.dev/projects/b7a72a83-f1f9-4ef4-9c33-ce35df51ac00) and click on Share -> Publish.
 
-If you get stuck along the way, get help in our [support forums](https://answers.netlify.com/).
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
