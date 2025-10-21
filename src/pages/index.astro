@@ -1,28 +1,129 @@
 ---
-const title = 'Astro Build Success!';
+const title = 'CoralByte Studio';
 ---
 
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
-    </head>
-    <body>
-        <h1>🚀 Astro Build Working!</h1>
-        <p>Your project has been successfully converted to Astro and builds correctly.</p>
         <style>
             body {
                 font-family: system-ui, sans-serif;
-                max-width: 600px;
-                margin: 2rem auto;
+                max-width: 1200px;
+                margin: 0 auto;
                 padding: 2rem;
-                background: #f0f0f0;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                min-height: 100vh;
+                color: white;
             }
-            h1 {
-                color: #333;
+            .header {
+                text-align: center;
+                padding: 4rem 0;
+            }
+            .title {
+                font-size: 3rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+            .subtitle {
+                font-size: 1.5rem;
+                opacity: 0.9;
+                margin-bottom: 2rem;
+            }
+            .button {
+                background: #ff6b6b;
+                color: white;
+                border: none;
+                padding: 1rem 2rem;
+                font-size: 1.1rem;
+                border-radius: 0.5rem;
+                cursor: pointer;
+                margin: 0.5rem;
+                transition: transform 0.2s;
+            }
+            .button:hover {
+                transform: scale(1.05);
+            }
+            .section {
+                padding: 3rem 0;
                 text-align: center;
             }
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+                margin-top: 2rem;
+            }
+            .card {
+                background: rgba(255, 255, 255, 0.1);
+                padding: 2rem;
+                border-radius: 1rem;
+                backdrop-filter: blur(10px);
+            }
+            .footer {
+                text-align: center;
+                padding: 2rem 0;
+                opacity: 0.8;
+            }
         </style>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="title">🚀 CoralByte Studio</h1>
+            <p class="subtitle">Creating engaging mobile games and apps for iOS and Android</p>
+            <button class="button">Explore Our Games</button>
+            <button class="button">Learn More</button>
+        </header>
+
+        <section class="section">
+            <h2>Who We Are</h2>
+            <p>Passionate developers creating memorable mobile experiences</p>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>📱 Mobile First</h3>
+                    <p>Optimized for both iOS and Android platforms</p>
+                </div>
+
+                <div class="card">
+                    <h3>🎮 Fun & Engaging</h3>
+                    <p>Games designed to entertain and challenge players</p>
+                </div>
+
+                <div class="card">
+                    <h3>💻 Quality Code</h3>
+                    <p>Built with modern technology and best practices</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Our Games</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>🧩 Jigsaw Puzzles - HD Art Puzzles</h3>
+                    <p>
+                        Relax and solve beautiful HD art puzzles. Choose from thousands of stunning images and challenge yourself with various difficulty
+                        levels.
+                    </p>
+                    <button class="button">Play Now</button>
+                </div>
+
+                <div class="card">
+                    <h3>🐭 Mice Rescue</h3>
+                    <p>Embark on an exciting adventure to rescue adorable mice! Navigate through challenging levels, solve puzzles, and overcome obstacles.</p>
+                    <button class="button">Play Now</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <h3>CoralByte Studio</h3>
+            <p>Creating innovative mobile games and apps</p>
+            <p>© {new Date().getFullYear()} CoralByte Studio. All rights reserved.</p>
+        </footer>
     </body>
 </html>
